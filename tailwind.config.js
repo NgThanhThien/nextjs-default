@@ -8,6 +8,7 @@ module.exports = {
     './layouts/**/*.{js,ts,jsx,tsx}',
   ],
   important: '#__next',
+  darkMode: ['class', '[data-mode="dark"]'],
   theme: {
     extend: {
       colors: {
