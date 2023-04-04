@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export const DEFAULT_THEME = "light";
+export const DEFAULT_THEME = "dark";
 
 export const withTailwindTheme = (Story, context) => {
   const { theme } = context.globals;

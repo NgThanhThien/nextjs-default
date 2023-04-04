@@ -9,7 +9,10 @@ const nextConfig = {
   },
   env: {
     
-  }
+  },
+  images: {
+    domains: ['assets.vercel.com'],
+  },
 }
 
 module.exports = nextConfig

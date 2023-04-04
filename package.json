@@ -8,13 +8,17 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "vitest --coverage",
+    "typecheck": "vitest typecheck"
   },
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.2",
+    "@testing-library/react": "^14.0.0",
     "@types/node": "18.15.10",
     "@types/react": "18.0.30",
     "@types/react-dom": "18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
@@ -22,7 +26,8 @@
     "react-dom": "18.2.0",
     "react-intl": "^6.3.2",
     "styled-components": "^5.3.9",
-    "typescript": "5.0.2"
+    "typescript": "5.0.2",
+    "vite-plugin-ssr": "^0.4.110"
   },
   "devDependencies": {
     "@babel/core": "^7.21.3",
@@ -35,11 +40,14 @@
     "@storybook/manager-webpack5": "^6.5.16",
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
+    "@vitest/coverage-c8": "^0.29.8",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^8.3.0",
     "eslint-plugin-storybook": "^0.6.11",
+    "jsdom": "^21.1.1",
     "postcss": "^8.4.21",
     "postcss-loader": "^7.1.0",
-    "tailwindcss": "^3.2.7"
+    "tailwindcss": "^3.2.7",
+    "vitest": "^0.29.8"
   }
 }

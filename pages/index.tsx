@@ -1,3 +1,4 @@
+// import HomePageLayout from '@/features/home';
 import HomePageLayout from '@/features/home';
 import React from 'react';
 
