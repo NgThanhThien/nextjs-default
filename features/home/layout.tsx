@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import { Counter } from '@/components/Counter';
 const HomePageLayout = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const HomePageLayout = () => {
       </Head>
       <main>
         <h1 title="hello">hello</h1>
+        <Counter />
         <div className="tw-flex tw-justify-center">
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

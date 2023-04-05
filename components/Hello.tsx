@@ -1,5 +1,7 @@
 import React from 'react';
-
-export const Hello = () => {
-  return <h1>Hello</h1>;
+type HelloProps = {
+  name: string;
+};
+export const Hello = ({ name }: HelloProps) => {
+  return <div role="contentinfo">Hello {name}</div>;
 };

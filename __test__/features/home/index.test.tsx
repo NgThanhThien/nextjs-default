@@ -5,9 +5,10 @@ import HomePageLayout from '../../../features/home';
 
 test('home', () => {
   render(<HomePageLayout />);
-  const header = within(screen.getByRole('heading', { level: 1, name: 'hello' }));
-  expect(header).toBeDefined();
-
+  // const header = within(screen.getByRole('heading', { level: 1, name: 'hello' }));
+  // expect(header).toBeDefined();
+  const hi = screen.getByText(/Hello word/!);
+  expect(hi).toBeDefined();
   // expect(main.getByRole('heading', { level: 1, name: /welcome to next\.js!/i })).toBeDefined();
 
   // const footer = within(screen.getByRole('contentinfo'));
