@@ -1,7 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
-import { Counter } from '@/components/Counter';
 const HomePageLayout = () => {
   return (
     <>
@@ -12,24 +10,14 @@ const HomePageLayout = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1 title="hello">hello</h1>
-        <Counter />
-        <div className="tw-flex tw-justify-center">
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{' '}
-            <span>
-              <Image
-                src="https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/57x57.png"
-                alt="Vercel Logo"
-                width={72}
-                height={16}
-              />
-            </span>
-          </a>
+        <div className="tw-container tw-mx-auto tw-mt-40 ">
+          <h1 className="tw-font-semibold tw-text-2xl">Test spacing</h1>
+
+          <div className="tw-flex tw-space-x-10 tw-mt-10">
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((i) => (
+              <div className="tw-w-32 tw-h-12 tw-bg-purple-500 tw-rounded-[5px]" key={i}></div>
+            ))}
+          </div>
         </div>
       </main>
     </>
